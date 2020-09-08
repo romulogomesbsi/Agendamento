@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.reservas.Convidado_reserva">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:text="Informações da Reserva"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/txt_nome_convidado"
+            android:hint="Informe o nome do convidado"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <EditText
+            android:text=""
+            android:id="@+id/txt_telefone_convidado"
+            android:hint="Informe o telefone"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_add_convidado"
+                android:text="Adicionar"
+                android:layout_marginLeft="10mm"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Button>
+
+            <Button
+                android:id="@+id/btn_concluir_add_convidados"
+                android:layout_marginLeft="10mm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Concluir"
+                android:textColor="@color/colorWhite"></Button>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_add_convidados"
+            android:layout_width="match_parent"
+            android:layout_height="70mm"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"></ListView>
+
+    </LinearLayout>
+
+</ScrollView>

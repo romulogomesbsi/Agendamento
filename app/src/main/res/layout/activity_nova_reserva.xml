@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.reservas.NovaReserva">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:text="Informações da Reserva"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:text="Ambiente: "
+               android:layout_width="match_parent"
+               android:layout_marginTop="20dp"
+               android:layout_height="wrap_content"
+               android:textSize="15dp"
+               android:textStyle="bold"/>
+           <TextView
+               android:id="@+id/txtv_nome_ambiente"
+               android:text=""
+               android:layout_width="match_parent"
+               android:layout_marginTop="20dp"
+               android:layout_height="wrap_content"
+               android:textSize="15dp"
+               android:textStyle="normal"/>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/edt_data_inicio"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:hint="Data de início"></EditText>
+
+            <Button
+                android:id="@+id/btn_selecionar_data"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Selecionar"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <EditText
+                   android:id="@+id/edt_hora_inicio"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:enabled="false"
+                   android:layout_alignParentLeft="true"
+                   android:hint="Hora de início"></EditText>
+
+
+               <Button
+                   android:id="@+id/btn_selecionar_hora"
+                   android:layout_width="134dp"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_toEndOf="@+id/edt_hora_inicio"
+                   android:layout_toRightOf="@+id/edt_hora_inicio"
+                   android:background="@color/colorPrimary"
+                   android:text="Selecionar"
+                   android:textColor="@color/colorWhite" />
+           </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:text="Informe a duração da reserva (horas):"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <EditText
+            android:id="@+id/edt_tot_horas"
+            android:hint="Ex: 5"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_add_reserva"
+            android:text="Reservar"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "349160651720",
+    "firebase_url": "https://agendamento-d75fb.firebaseio.com",
+    "project_id": "agendamento-d75fb",
+    "storage_bucket": "agendamento-d75fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349160651720:android:7bdeffe0d4433f1a9e9efd",
+        "android_client_info": {
+          "package_name": "com.romulodiego.reservas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349160651720-vohjt64o594h8oppt83p87ajufp6qph3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzq7Ar1WL09rl9oElG7SmkYucH3sS1Wrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349160651720-vohjt64o594h8oppt83p87ajufp6qph3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
