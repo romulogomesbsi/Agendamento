@@ -23,6 +23,6 @@ public class Convidado {
     @Override
     public String toString() {
         return "Nome: " + nome+ '\n' +
-                "Telefone: '" + telefone + '\'';
+                "Telefone: " + telefone;
     }
 }
